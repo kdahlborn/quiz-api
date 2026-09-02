@@ -12,6 +12,7 @@ provider:
         role: ${file(./config.yml):role}
 
 functions:
+    ## QUESTIONS
     getQuestions:
         handler: functions/questions/getQuestions/index.handler
         events:
@@ -48,3 +49,11 @@ functions:
             - httpApi:
                   path: /questions/{id}
                   method: DELETE
+
+    ## AUTH
+    login:
+        handler: functions/auth/login/index.handler
+        events:
+            - httpApi:
+                  path: /auth/login
+                  method: POST
