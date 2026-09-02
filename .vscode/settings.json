@@ -1,0 +1,10 @@
+// {
+//     "github.copilot.chat.commitMessageGeneration.instructions": [
+//         {
+//             "text": "Follow the commit message rules in the project guideline file."
+//         },
+//         {
+//             "file": ".github/COMMIT_GUIDELINES.md"
+//         }
+//     ]
+// }

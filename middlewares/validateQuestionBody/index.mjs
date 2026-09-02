@@ -1,5 +1,5 @@
 import createError from 'http-errors';
-import { questionSchema } from '../../models/questionSchema/index.mjs';
+import { questionSchema } from '../../models/questionSchema.mjs';
 
 export const validateQuestionBody = () => ({
     before: (handler) => {

@@ -1,5 +1,5 @@
-import questions from '../../data/index.mjs';
-import { sendResponse } from '../../responses/index.mjs';
+import questions from '../../../data/questions.mjs';
+import { sendResponse } from '../../../responses/index.mjs';
 
 export const handler = async (event) => {
     const { category, difficulty } = event.queryStringParameters || {};

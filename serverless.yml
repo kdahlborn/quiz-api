@@ -13,37 +13,37 @@ provider:
 
 functions:
     getQuestions:
-        handler: functions/getQuestions/index.handler
+        handler: functions/questions/getQuestions/index.handler
         events:
             - httpApi:
                   path: /questions
                   method: GET
     getRandomQuestion:
-        handler: functions/getRandomQuestion/index.handler
+        handler: functions/questions/getRandomQuestion/index.handler
         events:
             - httpApi:
                   path: /questions/random
                   method: GET
     addNewQuestion:
-        handler: functions/addNewQuestion/index.handler
+        handler: functions/questions/addNewQuestion/index.handler
         events:
             - httpApi:
                   path: /questions
                   method: POST
     answerQuestion:
-        handler: functions/answerQuestion/index.handler
+        handler: functions/questions/answerQuestion/index.handler
         events:
             - httpApi:
                   path: /questions/{id}/answer
                   method: POST
     updateQuestion:
-        handler: functions/updateQuestion/index.handler
+        handler: functions/questions/updateQuestion/index.handler
         events:
             - httpApi:
                   path: /questions/{id}
                   method: PUT
     deleteQuestion:
-        handler: functions/deleteQuestion/index.handler
+        handler: functions/questions/deleteQuestion/index.handler
         events:
             - httpApi:
                   path: /questions/{id}
