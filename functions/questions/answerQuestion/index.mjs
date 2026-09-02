@@ -3,7 +3,8 @@ import questions from '../../../data/questions.mjs';
 import { sendResponse } from '../../../responses/index.mjs';
 import httpJsonBodyParser from '@middy/http-json-body-parser';
 import httpErrorHandler from '@middy/http-error-handler';
-import { validateAnswerBody } from '../../../middlewares/validateAnswerBody/index.mjs';
+import { validateBody } from '../../../middlewares/validateBody.mjs';
+import { answerSchema } from '../../../models/answerSchema.mjs';
 
 export const handler = middy(async (event) => {
     const { id } = event.pathParameters;
@@ -32,5 +33,5 @@ export const handler = middy(async (event) => {
     }
 })
     .use(httpJsonBodyParser())
-    .use(validateAnswerBody())
+    .use(validateBody(answerSchema))
     .use(httpErrorHandler());
