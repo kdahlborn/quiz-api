@@ -1,0 +1,33 @@
+import middy from '@middy/core';
+import questions from '../../data/index.mjs';
+import { sendResponse } from '../../responses/index.mjs';
+import httpJsonBodyParser from '@middy/http-json-body-parser';
+import httpErrorHandler from '@middy/http-error-handler';
+import { validateQuestionBody } from '../../middlewares/validateQuestionBody/index.mjs';
+
+export const handler = middy(async (event) => {
+    const { id } = event.pathParameters;
+    const body = event.body;
+
+    const index = questions.findIndex((q) => q.id === Number(id));
+
+    if (index === -1) {
+        return sendResponse(400, {
+            message: 'No question with corresponding ID found',
+        });
+    }
+
+    questions[index] = {
+        id: Number(id),
+        ...body,
+    };
+
+    return sendResponse(200, {
+        success: true,
+        message: 'Question updated successfully',
+        updatedQuestion: questions[index],
+    });
+})
+    .use(httpJsonBodyParser())
+    .use(validateQuestionBody())
+    .use(httpErrorHandler());

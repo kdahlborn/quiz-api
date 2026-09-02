@@ -1,0 +1,50 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: kdahlborn
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: quiz-api
+
+provider:
+    name: aws
+    runtime: nodejs24.x
+    architecture: arm64
+    region: eu-north-1
+    iam:
+        role: ${file(./config.yml):role}
+
+functions:
+    getQuestions:
+        handler: functions/getQuestions/index.handler
+        events:
+            - httpApi:
+                  path: /questions
+                  method: GET
+    getRandomQuestion:
+        handler: functions/getRandomQuestion/index.handler
+        events:
+            - httpApi:
+                  path: /questions/random
+                  method: GET
+    addNewQuestion:
+        handler: functions/addNewQuestion/index.handler
+        events:
+            - httpApi:
+                  path: /questions
+                  method: POST
+    answerQuestion:
+        handler: functions/answerQuestion/index.handler
+        events:
+            - httpApi:
+                  path: /questions/{id}/answer
+                  method: POST
+    updateQuestion:
+        handler: functions/updateQuestion/index.handler
+        events:
+            - httpApi:
+                  path: /questions/{id}
+                  method: PUT
+    deleteQuestion:
+        handler: functions/deleteQuestion/index.handler
+        events:
+            - httpApi:
+                  path: /questions/{id}
+                  method: DELETE
