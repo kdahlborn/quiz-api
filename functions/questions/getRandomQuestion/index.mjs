@@ -21,7 +21,7 @@ export const handler = async (event) => {
     }
 
     if (filtered.length === 0) {
-        return sendResponse(404, {
+        return sendResponse(400, {
             success: false,
             message: 'No questions found',
         });

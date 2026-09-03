@@ -13,8 +13,6 @@ export const authenticateUser = () => ({
             });
         }
 
-        console.log('TOKEN:', token);
-
         try {
             const decoded = verifyToken(token.split(' ')[1]);
             handler.event.user = decoded;

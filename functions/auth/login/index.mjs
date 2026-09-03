@@ -1,6 +1,6 @@
 import middy from '@middy/core';
 import { users } from '../../../data/users.mjs';
-import httpJsonBodyParses from '@middy/http-json-body-parser';
+import httpJsonBodyParser from '@middy/http-json-body-parser';
 import { errorHandler } from '../../../middlewares/errorHandler.mjs';
 import { validateBody } from '../../../middlewares/validateBody.mjs';
 import { loginSchema } from '../../../models/userSchema.mjs';
@@ -32,6 +32,6 @@ export const handler = middy(async (event) => {
         });
     }
 })
-    .use(httpJsonBodyParses())
+    .use(httpJsonBodyParser())
     .use(validateBody(loginSchema))
     .use(errorHandler());
