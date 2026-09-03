@@ -1,6 +1,7 @@
 import middy from '@middy/core';
 import questions from '../../../data/questions.mjs';
 import { authenticateUser } from '../../../middlewares/authenticate.mjs';
+import { authorizeRole } from '../../../middlewares/authorize.mjs';
 import { errorHandler } from '../../../middlewares/errorHandler.mjs';
 import { sendResponse } from '../../../responses/index.mjs';
 
@@ -24,4 +25,5 @@ export const handler = middy(async (event) => {
     });
 })
     .use(authenticateUser())
+    .use(authorizeRole('admin'))
     .use(errorHandler());
