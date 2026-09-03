@@ -127,3 +127,12 @@ export const questionSchema = z.object({
 //             'any.only': 'correctAnswer must be a, b, c or d',
 //         }),
 // });
+
+export const questionUpdateSchema = questionSchema
+    .partial()
+    .extend({
+        options: questionSchema.shape.options.partial().optional(),
+    })
+    .refine((question) => Object.keys(question).length > 0, {
+        message: 'At least one question field is required',
+    });

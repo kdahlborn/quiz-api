@@ -6,7 +6,7 @@ import { errorHandler } from '../../../middlewares/errorHandler.mjs';
 import { authenticateUser } from '../../../middlewares/authenticate.mjs';
 import { authorizeRole } from '../../../middlewares/authorize.mjs';
 import { validateBody } from '../../../middlewares/validateBody.mjs';
-import { questionSchema } from '../../../models/questionSchema.mjs';
+import { questionUpdateSchema } from '../../../models/questionSchema.mjs';
 
 export const handler = middy(async (event) => {
     const { id } = event.pathParameters;
@@ -21,8 +21,11 @@ export const handler = middy(async (event) => {
     }
 
     questions[index] = {
-        id: Number(id),
+        ...questions[index],
         ...body,
+        options: body.options
+            ? { ...questions[index].options, ...body.options }
+            : questions[index].options,
     };
 
     return sendResponse(200, {
@@ -34,5 +37,5 @@ export const handler = middy(async (event) => {
     .use(httpJsonBodyParser())
     .use(authenticateUser())
     .use(authorizeRole('admin'))
-    .use(validateBody(questionSchema))
+    .use(validateBody(questionUpdateSchema))
     .use(errorHandler());
