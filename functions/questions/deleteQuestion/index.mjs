@@ -1,7 +1,10 @@
+import middy from '@middy/core';
 import questions from '../../../data/questions.mjs';
+import { authenticateUser } from '../../../middlewares/authenticate.mjs';
+import { errorHandler } from '../../../middlewares/errorHandler.mjs';
 import { sendResponse } from '../../../responses/index.mjs';
 
-export const handler = async (event) => {
+export const handler = middy(async (event) => {
     const { id } = event.pathParameters;
 
     const index = questions.findIndex((q) => q.id === Number(id));
@@ -19,4 +22,6 @@ export const handler = async (event) => {
         message: 'Question deleted successfully',
         deleted,
     });
-};
+})
+    .use(authenticateUser())
+    .use(errorHandler());
