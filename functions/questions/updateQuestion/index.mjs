@@ -2,7 +2,7 @@ import middy from '@middy/core';
 import questions from '../../../data/questions.mjs';
 import { sendResponse } from '../../../responses/index.mjs';
 import httpJsonBodyParser from '@middy/http-json-body-parser';
-import httpErrorHandler from '@middy/http-error-handler';
+import { errorHandler } from '../../../middlewares/errorHandler.mjs';
 import { validateBody } from '../../../middlewares/validateBody.mjs';
 import { questionSchema } from '../../../models/questionSchema.mjs';
 
@@ -31,4 +31,4 @@ export const handler = middy(async (event) => {
 })
     .use(httpJsonBodyParser())
     .use(validateBody(questionSchema))
-    .use(httpErrorHandler());
+    .use(errorHandler());

@@ -23,7 +23,7 @@ export const handler = async (event) => {
     if (filtered.length === 0) {
         return sendResponse(404, {
             success: false,
-            message: 'Inga frågor hittades',
+            message: 'No questions found',
         });
     }
 
