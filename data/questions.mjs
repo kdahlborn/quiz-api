@@ -1,12 +1,11 @@
 const questions = [
     // =========================
-    // HISTORIA – LÄTT
+    // history – easy
     // =========================
-
     {
         id: 1,
-        category: 'historia',
-        difficulty: 'lätt',
+        category: 'history',
+        difficulty: 'easy',
         question: 'Vem var Sveriges första kung av huset Bernadotte?',
         options: {
             a: 'Karl XIV Johan',
@@ -18,8 +17,8 @@ const questions = [
     },
     {
         id: 2,
-        category: 'historia',
-        difficulty: 'lätt',
+        category: 'history',
+        difficulty: 'easy',
         question: 'Vilket år började andra världskriget?',
         options: {
             a: '1935',
@@ -31,8 +30,8 @@ const questions = [
     },
     {
         id: 3,
-        category: 'historia',
-        difficulty: 'lätt',
+        category: 'history',
+        difficulty: 'easy',
         question: 'Vilket land byggde pyramiderna i Giza?',
         options: {
             a: 'Grekland',
@@ -44,8 +43,8 @@ const questions = [
     },
     {
         id: 4,
-        category: 'historia',
-        difficulty: 'lätt',
+        category: 'history',
+        difficulty: 'easy',
         question: 'Vem var USA:s första president?',
         options: {
             a: 'Abraham Lincoln',
@@ -57,8 +56,8 @@ const questions = [
     },
     {
         id: 5,
-        category: 'historia',
-        difficulty: 'lätt',
+        category: 'history',
+        difficulty: 'easy',
         question: 'Vilken svensk kung dog vid Fredrikstens fästning 1718?',
         options: {
             a: 'Karl XI',
@@ -69,12 +68,11 @@ const questions = [
         correctAnswer: 'b',
     },
 
-    // HISTORIA – MEDEL
-
+    // history – medium
     {
         id: 6,
-        category: 'historia',
-        difficulty: 'medel',
+        category: 'history',
+        difficulty: 'medium',
         question: 'Vilket år upplöstes unionen mellan Sverige och Norge?',
         options: {
             a: '1895',
@@ -86,8 +84,8 @@ const questions = [
     },
     {
         id: 7,
-        category: 'historia',
-        difficulty: 'medel',
+        category: 'history',
+        difficulty: 'medium',
         question: 'Vilken svensk kung införde enväldet 1680?',
         options: {
             a: 'Karl XI',
@@ -99,8 +97,8 @@ const questions = [
     },
     {
         id: 8,
-        category: 'historia',
-        difficulty: 'medel',
+        category: 'history',
+        difficulty: 'medium',
         question:
             'Vilket slag år 1709 blev ett avgörande nederlag för Karl XII?',
         options: {
@@ -113,8 +111,8 @@ const questions = [
     },
     {
         id: 9,
-        category: 'historia',
-        difficulty: 'medel',
+        category: 'history',
+        difficulty: 'medium',
         question:
             'Vem ledde Sovjetunionen under större delen av andra världskriget?',
         options: {
@@ -127,8 +125,8 @@ const questions = [
     },
     {
         id: 10,
-        category: 'historia',
-        difficulty: 'medel',
+        category: 'history',
+        difficulty: 'medium',
         question: 'Vilket år föll Berlinmuren?',
         options: {
             a: '1985',
@@ -139,12 +137,11 @@ const questions = [
         correctAnswer: 'c',
     },
 
-    // HISTORIA – SVÅR
-
+    // history – hard
     {
         id: 11,
-        category: 'historia',
-        difficulty: 'svår',
+        category: 'history',
+        difficulty: 'hard',
         question: 'Vilket år ägde Stockholms blodbad rum?',
         options: {
             a: '1497',
@@ -156,8 +153,8 @@ const questions = [
     },
     {
         id: 12,
-        category: 'historia',
-        difficulty: 'svår',
+        category: 'history',
+        difficulty: 'hard',
         question: 'Vilken fred avslutade det stora nordiska kriget?',
         options: {
             a: 'Freden i Roskilde',
@@ -169,8 +166,8 @@ const questions = [
     },
     {
         id: 13,
-        category: 'historia',
-        difficulty: 'svår',
+        category: 'history',
+        difficulty: 'hard',
         question:
             'Vem var Sveriges statsminister när landet gick med i Nationernas förbund?',
         options: {
@@ -183,8 +180,8 @@ const questions = [
     },
     {
         id: 14,
-        category: 'historia',
-        difficulty: 'svår',
+        category: 'history',
+        difficulty: 'hard',
         question:
             'Vilken romersk kejsare gjorde kristendomen tillåten i Romarriket genom Milanoediktet?',
         options: {
@@ -197,8 +194,8 @@ const questions = [
     },
     {
         id: 15,
-        category: 'historia',
-        difficulty: 'svår',
+        category: 'history',
+        difficulty: 'hard',
         question: 'Vilket år undertecknades Magna Carta?',
         options: {
             a: '1066',
@@ -210,13 +207,12 @@ const questions = [
     },
 
     // =========================
-    // GEOGRAFI – LÄTT
+    // geography – easy
     // =========================
-
     {
         id: 16,
-        category: 'geografi',
-        difficulty: 'lätt',
+        category: 'geography',
+        difficulty: 'easy',
         question: 'Vilket land är störst till ytan?',
         options: {
             a: 'Kanada',
@@ -228,8 +224,8 @@ const questions = [
     },
     {
         id: 17,
-        category: 'geografi',
-        difficulty: 'lätt',
+        category: 'geography',
+        difficulty: 'easy',
         question: 'Vad heter Sveriges huvudstad?',
         options: {
             a: 'Göteborg',
@@ -241,8 +237,8 @@ const questions = [
     },
     {
         id: 18,
-        category: 'geografi',
-        difficulty: 'lätt',
+        category: 'geography',
+        difficulty: 'easy',
         question:
             'Vilken är världens längsta flod enligt vanlig geografisk indelning?',
         options: {
@@ -255,8 +251,8 @@ const questions = [
     },
     {
         id: 19,
-        category: 'geografi',
-        difficulty: 'lätt',
+        category: 'geography',
+        difficulty: 'easy',
         question: 'På vilken kontinent ligger Brasilien?',
         options: {
             a: 'Afrika',
@@ -268,8 +264,8 @@ const questions = [
     },
     {
         id: 20,
-        category: 'geografi',
-        difficulty: 'lätt',
+        category: 'geography',
+        difficulty: 'easy',
         question: 'Vilket hav ligger mellan Sverige och Finland?',
         options: {
             a: 'Nordsjön',
@@ -280,12 +276,11 @@ const questions = [
         correctAnswer: 'b',
     },
 
-    // GEOGRAFI – MEDEL
-
+    // geography – medium
     {
         id: 21,
-        category: 'geografi',
-        difficulty: 'medel',
+        category: 'geography',
+        difficulty: 'medium',
         question: 'Vilket land har flest öar i världen?',
         options: {
             a: 'Indonesien',
@@ -297,8 +292,8 @@ const questions = [
     },
     {
         id: 22,
-        category: 'geografi',
-        difficulty: 'medel',
+        category: 'geography',
+        difficulty: 'medium',
         question: 'Vilken är Europas längsta flod?',
         options: {
             a: 'Donau',
@@ -310,8 +305,8 @@ const questions = [
     },
     {
         id: 23,
-        category: 'geografi',
-        difficulty: 'medel',
+        category: 'geography',
+        difficulty: 'medium',
         question: 'Vilket land ligger mellan Spanien och Frankrike?',
         options: {
             a: 'Portugal',
@@ -323,8 +318,8 @@ const questions = [
     },
     {
         id: 24,
-        category: 'geografi',
-        difficulty: 'medel',
+        category: 'geography',
+        difficulty: 'medium',
         question: 'Vilken är Afrikas största sjö till ytan?',
         options: {
             a: 'Tanganjikasjön',
@@ -336,8 +331,8 @@ const questions = [
     },
     {
         id: 25,
-        category: 'geografi',
-        difficulty: 'medel',
+        category: 'geography',
+        difficulty: 'medium',
         question: 'Vilken huvudstad ligger vid floden Donau?',
         options: {
             a: 'Budapest',
@@ -348,12 +343,11 @@ const questions = [
         correctAnswer: 'a',
     },
 
-    // GEOGRAFI – SVÅR
-
+    // geography – hard
     {
         id: 26,
-        category: 'geografi',
-        difficulty: 'svår',
+        category: 'geography',
+        difficulty: 'hard',
         question:
             'Vilket land har kust mot både Kaspiska havet och Persiska viken?',
         options: {
@@ -366,8 +360,8 @@ const questions = [
     },
     {
         id: 27,
-        category: 'geografi',
-        difficulty: 'svår',
+        category: 'geography',
+        difficulty: 'hard',
         question: 'Vilket är världens högsta berg utanför Asien?',
         options: {
             a: 'Aconcagua',
@@ -379,8 +373,8 @@ const questions = [
     },
     {
         id: 28,
-        category: 'geografi',
-        difficulty: 'svår',
+        category: 'geography',
+        difficulty: 'hard',
         question: 'Vilket land är helt omgivet av Sydafrika?',
         options: {
             a: 'Eswatini',
@@ -392,8 +386,8 @@ const questions = [
     },
     {
         id: 29,
-        category: 'geografi',
-        difficulty: 'svår',
+        category: 'geography',
+        difficulty: 'hard',
         question:
             'Vilken ö är världens största ö om Australien räknas som en kontinent?',
         options: {
@@ -406,8 +400,8 @@ const questions = [
     },
     {
         id: 30,
-        category: 'geografi',
-        difficulty: 'svår',
+        category: 'geography',
+        difficulty: 'hard',
         question:
             'Vilket sund skiljer Europa från Afrika vid Spaniens sydspets?',
         options: {
@@ -420,13 +414,12 @@ const questions = [
     },
 
     // =========================
-    // MUSIK – LÄTT
+    // music – easy
     // =========================
-
     {
         id: 31,
-        category: 'musik',
-        difficulty: 'lätt',
+        category: 'music',
+        difficulty: 'easy',
         question: 'Vilket instrument har vanligtvis 88 tangenter?',
         options: {
             a: 'Gitarr',
@@ -438,8 +431,8 @@ const questions = [
     },
     {
         id: 32,
-        category: 'musik',
-        difficulty: 'lätt',
+        category: 'music',
+        difficulty: 'easy',
         question:
             'Vilket land vann Eurovision Song Contest 1974 med gruppen ABBA?',
         options: {
@@ -452,8 +445,8 @@ const questions = [
     },
     {
         id: 33,
-        category: 'musik',
-        difficulty: 'lätt',
+        category: 'music',
+        difficulty: 'easy',
         question: 'Vilken grupp framförde låten Dancing Queen?',
         options: {
             a: 'Queen',
@@ -465,8 +458,8 @@ const questions = [
     },
     {
         id: 34,
-        category: 'musik',
-        difficulty: 'lätt',
+        category: 'music',
+        difficulty: 'easy',
         question: 'Vilket instrument spelar man med en stråke?',
         options: {
             a: 'Fiol',
@@ -478,8 +471,8 @@ const questions = [
     },
     {
         id: 35,
-        category: 'musik',
-        difficulty: 'lätt',
+        category: 'music',
+        difficulty: 'easy',
         question: 'Vilken svensk artist sjunger låten Avicii?',
         options: {
             a: 'Avicii var en svensk DJ och producent',
@@ -490,12 +483,11 @@ const questions = [
         correctAnswer: 'a',
     },
 
-    // MUSIK – MEDEL
-
+    // music – medium
     {
         id: 36,
-        category: 'musik',
-        difficulty: 'medel',
+        category: 'music',
+        difficulty: 'medium',
         question: 'Vem skrev den nionde symfonin, ofta kallad Ödessymfonin?',
         options: {
             a: 'Wolfgang Amadeus Mozart',
@@ -507,8 +499,8 @@ const questions = [
     },
     {
         id: 37,
-        category: 'musik',
-        difficulty: 'medel',
+        category: 'music',
+        difficulty: 'medium',
         question: 'Vilket årtionde slog The Beatles igenom internationellt?',
         options: {
             a: '1940-talet',
@@ -520,8 +512,8 @@ const questions = [
     },
     {
         id: 38,
-        category: 'musik',
-        difficulty: 'medel',
+        category: 'music',
+        difficulty: 'medium',
         question: 'Vilket instrument förknippas starkast med Miles Davis?',
         options: {
             a: 'Trumpet',
@@ -533,8 +525,8 @@ const questions = [
     },
     {
         id: 39,
-        category: 'musik',
-        difficulty: 'medel',
+        category: 'music',
+        difficulty: 'medium',
         question:
             'Vilken svensk grupp hade en internationell hit med The Sign?',
         options: {
@@ -547,8 +539,8 @@ const questions = [
     },
     {
         id: 40,
-        category: 'musik',
-        difficulty: 'medel',
+        category: 'music',
+        difficulty: 'medium',
         question: 'Vilken artist gav ut albumet Thriller?',
         options: {
             a: 'Prince',
@@ -559,12 +551,11 @@ const questions = [
         correctAnswer: 'b',
     },
 
-    // MUSIK – SVÅR
-
+    // music – hard
     {
         id: 41,
-        category: 'musik',
-        difficulty: 'svår',
+        category: 'music',
+        difficulty: 'hard',
         question: 'Vilken kompositör skrev operan Trollflöjten?',
         options: {
             a: 'Giuseppe Verdi',
@@ -576,8 +567,8 @@ const questions = [
     },
     {
         id: 42,
-        category: 'musik',
-        difficulty: 'svår',
+        category: 'music',
+        difficulty: 'hard',
         question:
             'Vilket år släpptes Pink Floyds album The Dark Side of the Moon?',
         options: {
@@ -590,8 +581,8 @@ const questions = [
     },
     {
         id: 43,
-        category: 'musik',
-        difficulty: 'svår',
+        category: 'music',
+        difficulty: 'hard',
         question:
             'Vilken jazzmusiker spelade saxofon på albumet A Love Supreme?',
         options: {
@@ -604,8 +595,8 @@ const questions = [
     },
     {
         id: 44,
-        category: 'musik',
-        difficulty: 'svår',
+        category: 'music',
+        difficulty: 'hard',
         question: 'Vilken svensk grupp släppte albumet The Visitors 1981?',
         options: {
             a: 'Roxette',
@@ -617,8 +608,8 @@ const questions = [
     },
     {
         id: 45,
-        category: 'musik',
-        difficulty: 'svår',
+        category: 'music',
+        difficulty: 'hard',
         question: 'Vad kallas en komposition för nio musiker?',
         options: {
             a: 'Oktett',
@@ -630,13 +621,12 @@ const questions = [
     },
 
     // =========================
-    // FILM – LÄTT
+    // movies – easy
     // =========================
-
     {
         id: 46,
-        category: 'film',
-        difficulty: 'lätt',
+        category: 'movies',
+        difficulty: 'easy',
         question: 'Vilken film handlar om Jack och Rose på fartyget Titanic?',
         options: {
             a: 'Titanic',
@@ -648,8 +638,8 @@ const questions = [
     },
     {
         id: 47,
-        category: 'film',
-        difficulty: 'lätt',
+        category: 'movies',
+        difficulty: 'easy',
         question: 'Vem spelar huvudrollen som Forrest Gump?',
         options: {
             a: 'Tom Hanks',
@@ -661,8 +651,8 @@ const questions = [
     },
     {
         id: 48,
-        category: 'film',
-        difficulty: 'lätt',
+        category: 'movies',
+        difficulty: 'easy',
         question: 'Vilken filmserie handlar om trollkarlen Harry Potter?',
         options: {
             a: 'Sagan om ringen',
@@ -674,8 +664,8 @@ const questions = [
     },
     {
         id: 49,
-        category: 'film',
-        difficulty: 'lätt',
+        category: 'movies',
+        difficulty: 'easy',
         question: 'Vilken animerad film handlar om lejonet Simba?',
         options: {
             a: 'Lejonkungen',
@@ -687,8 +677,8 @@ const questions = [
     },
     {
         id: 50,
-        category: 'film',
-        difficulty: 'lätt',
+        category: 'movies',
+        difficulty: 'easy',
         question: 'Vem spelar Iron Man i Marvels filmer?',
         options: {
             a: 'Chris Evans',
@@ -699,12 +689,11 @@ const questions = [
         correctAnswer: 'b',
     },
 
-    // FILM – MEDEL
-
+    // movies – medium
     {
         id: 51,
-        category: 'film',
-        difficulty: 'medel',
+        category: 'movies',
+        difficulty: 'medium',
         question: 'Vem regisserade Jurassic Park?',
         options: {
             a: 'James Cameron',
@@ -716,8 +705,8 @@ const questions = [
     },
     {
         id: 52,
-        category: 'film',
-        difficulty: 'medel',
+        category: 'movies',
+        difficulty: 'medium',
         question: 'Vilken film vann Oscar för bästa film 1995?',
         options: {
             a: 'Pulp Fiction',
@@ -729,8 +718,8 @@ const questions = [
     },
     {
         id: 53,
-        category: 'film',
-        difficulty: 'medel',
+        category: 'movies',
+        difficulty: 'medium',
         question:
             'Vilken skådespelare spelade huvudrollen i Gladiator från 2000?',
         options: {
@@ -743,8 +732,8 @@ const questions = [
     },
     {
         id: 54,
-        category: 'film',
-        difficulty: 'medel',
+        category: 'movies',
+        difficulty: 'medium',
         question: 'Vilken film från 1999 handlar om en hacker vid namn Neo?',
         options: {
             a: 'Fight Club',
@@ -756,8 +745,8 @@ const questions = [
     },
     {
         id: 55,
-        category: 'film',
-        difficulty: 'medel',
+        category: 'movies',
+        difficulty: 'medium',
         question: 'Vilken regissör skapade Sagan om ringen-trilogin?',
         options: {
             a: 'Peter Jackson',
@@ -768,12 +757,11 @@ const questions = [
         correctAnswer: 'a',
     },
 
-    // FILM – SVÅR
-
+    // movies – hard
     {
         id: 56,
-        category: 'film',
-        difficulty: 'svår',
+        category: 'movies',
+        difficulty: 'hard',
         question: 'Vilken film vann den första Oscarstatyetten för bästa film?',
         options: {
             a: 'Ben-Hur',
@@ -785,8 +773,8 @@ const questions = [
     },
     {
         id: 57,
-        category: 'film',
-        difficulty: 'svår',
+        category: 'movies',
+        difficulty: 'hard',
         question: 'Vem regisserade filmen Pulp Fiction?',
         options: {
             a: 'Martin Scorsese',
@@ -798,8 +786,8 @@ const questions = [
     },
     {
         id: 58,
-        category: 'film',
-        difficulty: 'svår',
+        category: 'movies',
+        difficulty: 'hard',
         question:
             'Vilken skådespelare spelar huvudrollen som Travis Bickle i Taxi Driver?',
         options: {
@@ -812,8 +800,8 @@ const questions = [
     },
     {
         id: 59,
-        category: 'film',
-        difficulty: 'svår',
+        category: 'movies',
+        difficulty: 'hard',
         question:
             'Vilken film från 1968 regisserades av Stanley Kubrick och handlar om en mystisk monolit?',
         options: {
@@ -826,8 +814,8 @@ const questions = [
     },
     {
         id: 60,
-        category: 'film',
-        difficulty: 'svår',
+        category: 'movies',
+        difficulty: 'hard',
         question:
             'Vilken skådespelare spelade Hannibal Lecter i När lammen tystnar?',
         options: {
@@ -840,13 +828,12 @@ const questions = [
     },
 
     // =========================
-    // DJUR & NATUR – LÄTT
+    // animals-nature – easy
     // =========================
-
     {
         id: 61,
-        category: 'djur & natur',
-        difficulty: 'lätt',
+        category: 'animals-nature',
+        difficulty: 'easy',
         question: 'Vilket är världens största landlevande djur?',
         options: {
             a: 'Giraff',
@@ -858,8 +845,8 @@ const questions = [
     },
     {
         id: 62,
-        category: 'djur & natur',
-        difficulty: 'lätt',
+        category: 'animals-nature',
+        difficulty: 'easy',
         question: 'Vilket djur brukar kallas människans bästa vän?',
         options: {
             a: 'Katt',
@@ -871,8 +858,8 @@ const questions = [
     },
     {
         id: 63,
-        category: 'djur & natur',
-        difficulty: 'lätt',
+        category: 'animals-nature',
+        difficulty: 'easy',
         question: 'Vilket djur producerar honung?',
         options: {
             a: 'Geting',
@@ -884,8 +871,8 @@ const questions = [
     },
     {
         id: 64,
-        category: 'djur & natur',
-        difficulty: 'lätt',
+        category: 'animals-nature',
+        difficulty: 'easy',
         question: 'Vilket av dessa djur är ett däggdjur?',
         options: {
             a: 'Haj',
@@ -897,8 +884,8 @@ const questions = [
     },
     {
         id: 65,
-        category: 'djur & natur',
-        difficulty: 'lätt',
+        category: 'animals-nature',
+        difficulty: 'easy',
         question: 'Vilken gas behöver människor för att kunna andas?',
         options: {
             a: 'Kväve',
@@ -909,12 +896,11 @@ const questions = [
         correctAnswer: 'b',
     },
 
-    // DJUR & NATUR – MEDEL
-
+    // animals-nature – medium
     {
         id: 66,
-        category: 'djur & natur',
-        difficulty: 'medel',
+        category: 'animals-nature',
+        difficulty: 'medium',
         question: 'Vilket är världens största nu levande djur?',
         options: {
             a: 'Blåval',
@@ -926,8 +912,8 @@ const questions = [
     },
     {
         id: 67,
-        category: 'djur & natur',
-        difficulty: 'medel',
+        category: 'animals-nature',
+        difficulty: 'medium',
         question:
             'Vilket organ använder fisken främst för att andas under vatten?',
         options: {
@@ -940,8 +926,8 @@ const questions = [
     },
     {
         id: 68,
-        category: 'djur & natur',
-        difficulty: 'medel',
+        category: 'animals-nature',
+        difficulty: 'medium',
         question: 'Vilket ämne tar växter upp från luften under fotosyntesen?',
         options: {
             a: 'Syre',
@@ -953,8 +939,8 @@ const questions = [
     },
     {
         id: 69,
-        category: 'djur & natur',
-        difficulty: 'medel',
+        category: 'animals-nature',
+        difficulty: 'medium',
         question:
             'Vilket djur är känt för att kunna ändra färg och röra sina ögon oberoende av varandra?',
         options: {
@@ -967,8 +953,8 @@ const questions = [
     },
     {
         id: 70,
-        category: 'djur & natur',
-        difficulty: 'medel',
+        category: 'animals-nature',
+        difficulty: 'medium',
         question: 'Vad kallas processen där en larv utvecklas till en fjäril?',
         options: {
             a: 'Fotosyntes',
@@ -979,12 +965,11 @@ const questions = [
         correctAnswer: 'b',
     },
 
-    // DJUR & NATUR – SVÅR
-
+    // animals-nature – hard
     {
         id: 71,
-        category: 'djur & natur',
-        difficulty: 'svår',
+        category: 'animals-nature',
+        difficulty: 'hard',
         question: 'Vilket är det enda däggdjur som kan flyga aktivt?',
         options: {
             a: 'Flygekorren',
@@ -996,8 +981,8 @@ const questions = [
     },
     {
         id: 72,
-        category: 'djur & natur',
-        difficulty: 'svår',
+        category: 'animals-nature',
+        difficulty: 'hard',
         question: 'Vilken del av cellen innehåller huvuddelen av cellens DNA?',
         options: {
             a: 'Ribosomen',
@@ -1009,8 +994,8 @@ const questions = [
     },
     {
         id: 73,
-        category: 'djur & natur',
-        difficulty: 'svår',
+        category: 'animals-nature',
+        difficulty: 'hard',
         question: 'Vilken grupp tillhör spindlar?',
         options: {
             a: 'Insekter',
@@ -1022,8 +1007,8 @@ const questions = [
     },
     {
         id: 74,
-        category: 'djur & natur',
-        difficulty: 'svår',
+        category: 'animals-nature',
+        difficulty: 'hard',
         question: 'Vilken typ av blodkärl leder blodet från hjärtat?',
         options: {
             a: 'Vener',
@@ -1035,8 +1020,8 @@ const questions = [
     },
     {
         id: 75,
-        category: 'djur & natur',
-        difficulty: 'svår',
+        category: 'animals-nature',
+        difficulty: 'hard',
         question:
             'Vilken process omvandlar ljusenergi till kemisk energi i växter?',
         options: {
