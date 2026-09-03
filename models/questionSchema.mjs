@@ -6,6 +6,7 @@ export const questionSchema = z.object({
     category: z
         .string({ message: 'category must be a string' })
         .trim()
+        .toLowerCase()
         .min(1, 'category is required'),
 
     difficulty: z

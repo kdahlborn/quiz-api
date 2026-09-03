@@ -5,6 +5,7 @@ import { errorHandler } from '../../../middlewares/errorHandler.mjs';
 import { validateBody } from '../../../middlewares/validateBody.mjs';
 import { loginSchema } from '../../../models/userSchema.mjs';
 import { sendResponse } from '../../../responses/index.mjs';
+import { signToken } from '../../../utils/jwt.mjs';
 
 export const handler = middy(async (event) => {
     const { username, password } = event.body;
@@ -16,7 +17,7 @@ export const handler = middy(async (event) => {
             return sendResponse(200, {
                 success: true,
                 message: 'User logged in successfully',
-                user,
+                token: signToken({ username: user.username, role: user.role }),
             });
         } else {
             return sendResponse(400, {
